@@ -10,13 +10,11 @@ $(function(){
   });
 })
 
-// $(function(){
-//       $(".team__item__btn").click(function(){
-//         $(".team__item__btns").toggleClass("team__item__btns-modify");
-//         $(".team__item__blog").toggleClass("team__item__blog-modify");
-//         $(".team__item__btn").toggleClass("team__item__btn-modify");
-//         $(".team__item__blog__p").toggleClass("team__item__blog__p-active");
-//         $(".team__item__blog__span").toggleClass("team__item__blog__span-modify");
-//         $("..team__item__btn__2").toggleClass("team__item__btn__2-modify");
-//       })
-// })
+$(function(){
+      $(".team__icon").click(function(){
+        $(".team__icon__menu").toggleClass("team__icon__menu__active");
+        $(this).toggleClass("team__icon__active");
+        $(".team__overlay").toggleClass("team__overlay__active");
+        $(this).find('i').toggleClass("fa-solid fa-plus fa-solid fa-xmark");
+      })
+})
