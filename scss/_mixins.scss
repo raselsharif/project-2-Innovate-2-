@@ -1,0 +1,41 @@
+$white: #fff;
+$text-black: #30344E;
+$text-orange: #FD5F36;
+$text-blue: #52C5B6;
+$poppins: 'Poppins', sans-serif;
+$inter: 'Inter', sans-serif;
+$transition: all linear 0.3s;
+
+@mixin common-btn{
+    color: $text-black;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 14px 28px;
+            font-family: $poppins;
+            background: $white;
+            border-radius: 5px;
+            transition: $transition;
+            text-transform: capitalize;
+            &:hover{
+                color: $white;
+                background: $text-orange;
+            }
+}
+
+@mixin common__heading{
+    h3{
+        color: #FD5F36;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5;
+        font-family: $poppins;
+    }
+    p{
+        color: #30344E;
+        font-size: 48px;
+        font-weight: 600;
+        font-family: $poppins;
+        line-height: 1.5;
+        padding-top: 8px;
+    }
+}
