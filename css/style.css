@@ -455,6 +455,9 @@ h1, h2, h3, h4, h5, h6, p {
   color: #fff;
 }
 
+#business {
+  padding: 160px 0;
+}
 #business .business__content h2 {
   color: #30344E;
   font-size: 48px;
@@ -487,4 +490,118 @@ h1, h2, h3, h4, h5, h6, p {
 #business .business__content a:hover {
   color: #fff;
   background: #FD5F36;
+}
+#business .business__content .business__menu {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+#business .business__content .business__menu .business__item {
+  width: 48%;
+}
+#business .business__content .business__menu .business__item h3 {
+  color: #30344E;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
+#business .business__content .business__menu .business__item h4 {
+  color: #5B5F77;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+#business .business__image {
+  position: relative;
+}
+#business .business__image .business__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 450px;
+}
+#business .business__image .business__img .business__img__main {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+#business .business__image .business__img .business__border {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  z-index: -444;
+}
+#business .business__image .business__img .overlay {
+  width: 361px;
+  position: absolute;
+  left: -40px;
+  bottom: -103px;
+  background: #52C5B6;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 444;
+}
+#business .business__image .business__img .overlay span {
+  color: #fff;
+  font-size: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+#business .business__image .business__img .overlay p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  position: relative;
+}
+#business .business__image .business__img .overlay p::after {
+  position: absolute;
+  top: 16px;
+  right: -70px;
+  width: 128px;
+  height: 3px;
+  content: "";
+  background: #fff;
+  z-index: -555;
+}
+#business .business__image .business__img .business__shadow {
+  position: absolute;
+  bottom: -81px;
+  right: 0;
+  z-index: -555;
+}
+#business .business__image .business__img__2 {
+  position: absolute;
+  left: 0;
+  bottom: -550px;
+  width: 190px;
+  height: 300px;
+}
+#business .business__image .business__img__2::after {
+  position: absolute;
+  content: url(../images/business-5.png);
+  top: -110px;
+  left: 30px;
+}
+#business .business__image .business__img__2 img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
